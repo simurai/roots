@@ -1,0 +1,22 @@
+/*
+ * Badge
+ */
+
+.Badge {
+  display: inline-block;
+  margin: .5rem;
+  min-width: 2em;
+  line-height: 2em;
+  text-align: center;
+  color: white;
+  border-radius: $borderRadius;
+  background-color: $colorBG;
+
+  &.is-success  { background-color: $color-success; }
+  &.is-error    { background-color: $color-error; }
+
+  &.is-pill {
+    border-radius: 2em;
+  }
+
+}

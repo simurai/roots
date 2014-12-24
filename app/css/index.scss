@@ -1,0 +1,13 @@
+/*
+ * Main CSS file
+ */
+
+@import '_config';
+@import '_roots';
+@import '_utils';
+
+// Components
+@import 'components/_button';
+@import 'components/_badge';
+@import 'components/_toggle';
+@import 'components/_slider';

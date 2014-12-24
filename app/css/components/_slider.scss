@@ -1,0 +1,45 @@
+/*
+ * Slider
+ */
+
+.Slider {
+  -webkit-appearance: none;
+  vertical-align: middle;
+  margin: .5rem;
+  height: 4px;
+  font-size: inherit;
+  background: currentColor;
+  outline: none;
+  border-radius: $borderRadius;
+  color: $color;
+
+  &.is-success {
+    color: $color-success;
+  }
+
+  // Thumb ------------------------------
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    width: 1.25em;
+    height: 1.25em;
+    border-radius: 1.25em;
+    border: 3px solid;
+    background-color: white;
+    transition: transform .32s;
+  }
+
+  &:active::-webkit-slider-thumb {
+    transform: scale(1.4);
+    transition-duration: .06s;
+  }
+
+  &.is-block::-webkit-slider-thumb {
+    border-radius: $borderRadius;
+  }
+
+  [theme="dark"] &::-webkit-slider-thumb {
+    background-color: #333;
+  }
+
+}

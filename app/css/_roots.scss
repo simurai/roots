@@ -1,0 +1,29 @@
+/*
+ * :roots styles
+ */
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:root {
+  height: 100%;
+  font-family: $fontFamily;
+  font-size: $space; // Spacing of components, used for rem units
+  background-color: $colorBG;
+}
+
+body {
+  height: 100%;
+  margin: 0; // Remove default margin
+  font-size: $size; // Sizing of components
+}
+
+
+// Themes -------------------------------------
+
+[theme="dark"] {
+  background: #333;
+}

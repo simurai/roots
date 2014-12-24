@@ -1,0 +1,31 @@
+/*
+ * Button
+ */
+
+.Button {
+  display: inline-block;
+  margin: .5rem;
+  padding: .5em 1em;
+  text-align: center;
+  font-family: inherit;
+  font-size: inherit;
+  text-decoration: none;
+  outline: 0;
+  border: 1px solid hsla(0, 0%, 0%, 0.15);
+  color: white;
+  cursor: pointer;
+  border-radius: $borderRadius;
+  background-color: $color;
+
+  [theme="dark"] & {
+    border-color: transparent;
+  }
+
+  &.is-success { background-color: $color-success; }
+  &.is-error { background-color: $color-error; }
+
+  &.is-pill {
+    border-radius: 2em;
+  }
+
+}

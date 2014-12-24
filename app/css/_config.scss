@@ -1,0 +1,27 @@
+/*
+ * Variables to configure sizes, colors etc.
+ */
+
+ // Size + Spacing -------------------------------------
+
+$size:  16px;
+$space: 16px;
+
+
+// Colors -------------------------------------
+
+$color:         cornflowerblue;
+$color-success: hsl(150, 60%, 56%);
+$color-error:  hsl(0, 80%, 60%);
+$colorBG:       white;
+
+
+// Typography -------------------------------------
+
+$fontFamily: Avenir, sans-serif;
+$lineHeight: 1.5;
+
+
+// Shape -------------------------------------
+
+$borderRadius: 4px;
