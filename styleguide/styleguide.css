@@ -12,11 +12,13 @@ h3 {
   margin: 4em 0 0 0;
   font-size: 1.6em;
   font-weight: 300;
+  text-align: center;
 }
 h1 {
   margin: 0;
   font-size: 4em;
   font-weight: 300;
+  text-align: center;
 }
 
 section {
@@ -26,4 +28,8 @@ section {
 [theme] {
   margin: 2rem 0;
   padding: 2rem;
+}
+
+[theme="default"] {
+  border: 1px solid hsla(0,0%,0%,.1);
 }
