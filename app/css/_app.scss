@@ -1,5 +1,5 @@
 /*
- * :roots styles
+ * App
  */
 
 *,
@@ -9,14 +9,14 @@
 }
 
 :root {
-  height: 100%;
   font-family: $fontFamily;
   font-size: $space; // Spacing of components, used for rem units
+  line-height: $lineHeight;
+  color: $color;
   background-color: $colorBG;
 }
 
-body {
-  height: 100%;
+.App {
   margin: 0; // Remove default margin
   font-size: $size; // Sizing of components
 }

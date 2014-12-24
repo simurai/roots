@@ -2,35 +2,6 @@
  * Main CSS file
  */
 /*
- * Variables to configure sizes, colors etc.
- */
-/*
- * :roots styles
- */
-*,
-*:before,
-*:after {
-  box-sizing: border-box;
-}
-
-:root {
-  height: 100%;
-  font-family: Avenir, sans-serif;
-  font-size: 16px;
-  background-color: white;
-}
-
-body {
-  height: 100%;
-  margin: 0;
-  font-size: 16px;
-}
-
-[theme="dark"] {
-  background: #333;
-}
-
-/*
  * Utils
  */
 .u-clearFix::before {
@@ -39,6 +10,32 @@ body {
 }
 .u-clearFix::after {
   clear: both;
+}
+
+/*
+ * App
+ */
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Avenir, sans-serif;
+  font-size: 16px;
+  line-height: 1.5;
+  color: cornflowerblue;
+  background-color: white;
+}
+
+.App {
+  margin: 0;
+  font-size: 16px;
+}
+
+[theme="dark"] {
+  background: #333;
 }
 
 /*
