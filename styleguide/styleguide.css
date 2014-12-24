@@ -1,0 +1,29 @@
+/* Styles specific to the Styleguide */
+
+body {
+  padding: 0 4rem;
+}
+
+a {
+  color: _color;
+}
+
+h3 {
+  margin: 4em 0 0 0;
+  font-size: 1.6em;
+  font-weight: 300;
+}
+h1 {
+  margin: 0;
+  font-size: 4em;
+  font-weight: 300;
+}
+
+section {
+  margin: 1rem;
+}
+
+[theme] {
+  margin: 2rem 0;
+  padding: 2rem;
+}
