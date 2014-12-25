@@ -9,8 +9,8 @@
   line-height: 2em;
   text-align: center;
   color: white;
-  border-radius: $borderRadius;
-  background-color: $colorBG;
+  border-radius: $border-radius;
+  background-color: $color;
 
   &.is-success  { background-color: $color-success; }
   &.is-error    { background-color: $color-error; }

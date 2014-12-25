@@ -10,7 +10,7 @@
   font-size: inherit;
   background: currentColor;
   outline: none;
-  border-radius: $borderRadius;
+  border-radius: $border-radius;
   color: $color;
 
   &.is-success {
@@ -25,7 +25,7 @@
     height: 1.25em;
     border-radius: 1.25em;
     border: 3px solid;
-    background-color: white;
+    background-color: $bg-color;
     transition: transform .32s;
   }
 
@@ -35,11 +35,15 @@
   }
 
   &.is-block::-webkit-slider-thumb {
-    border-radius: $borderRadius;
+    border-radius: $border-radius;
+  }
+
+  [theme="light"] &::-webkit-slider-thumb {
+    background-color: $bg-light;
   }
 
   [theme="dark"] &::-webkit-slider-thumb {
-    background-color: #333;
+    background-color: $bg-dark;
   }
 
 }

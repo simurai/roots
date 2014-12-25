@@ -10,17 +10,26 @@ $space: 16px;
 // Colors -------------------------------------
 
 $color:         cornflowerblue;
+$bg-color:      hsl(220, 80%, 90%);
 $color-success: hsl(150, 60%, 56%);
 $color-error:   hsl(0, 80%, 60%);
-$colorBG:       white;
+
+
+// Themes -------------------------------------
+
+$tx-light:   hsl(0,0%,30%);
+$bg-light:   hsl(0,0%,100%);
+
+$tx-dark:    hsl(0,0%, 50%);
+$bg-dark:    hsl(0,0%, 30%);
 
 
 // Typography -------------------------------------
 
-$fontFamily: Avenir, sans-serif;
-$lineHeight: 1.5;
+$font-family: Avenir, sans-serif;
+$line-height: 1.5;
 
 
 // Shape -------------------------------------
 
-$borderRadius: 4px;
+$border-radius: 4px;
