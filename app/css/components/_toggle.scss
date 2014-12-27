@@ -11,17 +11,17 @@
   height: 2em;
   margin: .5rem;
   font-size: inherit;
-  color: $color;
+  color: $color-accent;
   outline: none;
   cursor: pointer;
   -webkit-user-select: none;
   -webkit-tap-highlight-color: transparent;
   transition: background-color 0.2s cubic-bezier(0.5, 0.15, 0.2, 1);
   border-radius: 2em;
-  background-color: desaturate($color, 100%);
+  background-color: desaturate($color-accent, 100%);
 
   &:checked {
-    background-color: $color;
+    background-color: $color-accent;
   }
 
 
@@ -40,7 +40,7 @@
     border-radius: inherit;
     border: 4px solid transparent;
     background-clip: content-box;
-    background-color: $bg-color;
+    background-color: $bg-root;
     transition: transform 0.2s cubic-bezier(0.5, 0.15, 0.2, 1);
   }
 

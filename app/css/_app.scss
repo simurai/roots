@@ -12,8 +12,7 @@
   font-size: $space; // Spacing of components, used for rem units
   font-family: $font-family;
   line-height: $line-height;
-  color: $tx-light;
-  background-color: $bg-color;
+  @include setColor($bg-root);
 }
 
 .App {
@@ -25,11 +24,9 @@
 // Themes -------------------------------------
 
 [theme="light"] {
-  color: $tx-light;
-  background-color: $bg-light;
+  @include setColor($bg-light);
 }
 
 [theme="dark"] {
-  color: $tx-dark;
-  background-color: $bg-dark;
+  @include setColor($bg-dark);
 }

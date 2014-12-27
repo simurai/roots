@@ -2,6 +2,13 @@
  * Button
  */
 
+ // Mixins ------------------------------
+
+ @mixin ButtonVariant($bg-color) {
+   border: none;
+   @include setColor($bg-color);
+ }
+
 .Button {
   display: inline-block;
   margin: .5rem;
@@ -11,18 +18,15 @@
   font-size: inherit;
   text-decoration: none;
   outline: 0;
-  border: 1px solid hsla(0, 0%, 0%, 0.15);
-  color: white;
+  border: 1px solid;
+  color: inherit;
   cursor: pointer;
   border-radius: $border-radius;
-  background-color: $color;
+  background-color: transparent;
 
-  [theme="dark"] & {
-    border-color: transparent;
-  }
-
-  &.is-success { background-color: $color-success; }
-  &.is-error { background-color: $color-error; }
+  &.is-primary { @include ButtonVariant($color-accent); }
+  &.is-success { @include ButtonVariant($color-success); }
+  &.is-error   { @include ButtonVariant($color-error); }
 
   &.is-pill {
     border-radius: 2em;

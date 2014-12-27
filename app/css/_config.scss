@@ -7,21 +7,17 @@ $size:  16px;
 $space: 16px;
 
 
+// Themes -------------------------------------
+$bg-root:  hsl(60, 20%, 86%);
+$bg-light: hsl( 40,10%,98%);
+$bg-dark:  hsl(220,10%, 30%);
+
+
 // Colors -------------------------------------
 
-$color:         cornflowerblue;
-$bg-color:      hsl(220, 80%, 90%);
-$color-success: hsl(150, 60%, 56%);
+$color-accent:  hsl(220, 80%, 66%);
+$color-success: hsl(150, 60%, 60%);
 $color-error:   hsl(0, 80%, 60%);
-
-
-// Themes -------------------------------------
-
-$tx-light:   hsl(0,0%,30%);
-$bg-light:   hsl(0,0%,100%);
-
-$tx-dark:    hsl(0,0%, 50%);
-$bg-dark:    hsl(0,0%, 30%);
 
 
 // Typography -------------------------------------
@@ -33,3 +29,25 @@ $line-height: 1.5;
 // Shape -------------------------------------
 
 $border-radius: 4px;
+
+
+
+
+
+// Mixins ------------------------------
+// -------------------------------------
+
+@mixin setColor($bg-color, $sat-ratio: 33) {
+  @if (saturation($bg-color) > 33) {
+    @if (lightness($bg-color) > 66) {
+      color: darken($bg-color, $sat-ratio + 25);
+    }
+    @else {
+      color: lighten($bg-color, $sat-ratio + 25);
+    }
+  }
+  @else {
+    color: text-contrast($bg-color);
+  }
+  background-color: $bg-color;
+}
